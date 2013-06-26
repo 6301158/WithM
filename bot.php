@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+	<head>
 		<meta charset="utf-8">
 		<title>U-moa</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,9 @@
 		<meta name="author" content="Satoshi Matsuyama">
 		<meta property="og:image" content="http://u-moa.info/images/webclip.png" />
 		<meta http-equiv="refresh" content="0.3;url=http://user.u-moa.info/max/public_html/withM/next.html" />
-
-		<!-- Le styles -->
 		<link href="../css/bootstrap.css" rel="stylesheet">
 		<link href="../css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="../css/prettify.css" rel="stylesheet">
-
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-146052-10']);
@@ -28,9 +25,7 @@
 			})();
 		</script>
 	</head>
-
 	<body data-spy="scroll" data-target=".bs-docs-sidebar">
-
 		<!-- Navbar================================================== -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
@@ -60,9 +55,7 @@
 						</ul>
 					</div>
 				</div>
-				<!-- Navbar================================================== -->
 			</div>
-
 			<!--ボタンの設定------------------------------------------------------------->
 			<div style="text-align:center">
 				<img src="../images/loading.gif" style="padding-top: 150px" />
@@ -70,21 +63,18 @@
 					loading
 				</p>
 			</div>
-
-			<!--PHPの設定------------------------------------------------------------->
 		</div>
-
 		<!--PHPの設定------------------------------------------------------------->
 		<div class="php" style="padding-top: 1000px">
 			<?php
 			require_once ('../twitteroauth/twitteroauth.php');
 			require_once ('config.php');
-			$conn=new TwitterOAuth(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_TOKEN,ACCESS_TOKEN_SECRET);
-			$data1=$_POST['data1'];
-			$params=array('status'=>"@1901137  @{$data1} から依頼来ているぞ");
-			$result=$conn->OAuthRequest("http://api.twitter.com/1.1/statuses/update.json","POST",array("status"=>$params));
+			$conn = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
+			$data1 = $_POST['data1'];
+			$params = array('status' => "@1901137  @{$data1} から依頼来ているぞ");
+			$result = $conn -> OAuthRequest("http://api.twitter.com/1.1/statuses/update.json", "POST", array("status" => $params));
 			var_dump($result);
-		?>
+			?>
 		</div>
 	</body>
 </html>
