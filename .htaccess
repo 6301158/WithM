@@ -1,0 +1,4 @@
+SetEnvIf Referer "http://user.u-moa.info/max/public_html/withM/block/bot.php" Ref1
+Order Deny,Allow
+Deny from all
+Allow from env=Ref1
