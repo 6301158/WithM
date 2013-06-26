@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+		<meta charset="utf-8">
+		<title>With M</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="松山とお食事に行きたい時押して下さい。もし暇山であれば松山がダッシュであなたの元へ向かいます。">
+		<meta name="author" content="Satoshi Matsuyama">
+		<meta property="og:image" content="http://u-moa.info/images/webclip.png" />
+		<link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+		<link rel="apple-touch-icon-precomposed" href="images/iPhone_icon.jpg" />
+		<!-- Le styles -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/prettify.css" rel="stylesheet">
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-146052-10']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script type="text/javascript">
+			function ChkForm(arg) {
+				//引数 argは onsubmitから渡された フォームオブジェクト
+				var rval = true;
+				/*チェック結果用 真偽変数。初期値をtrueにしておく */
+
+				if (arg.data1.value == '')
+					rval = Err('あなたのUsernameを書いて下さい');
+				return rval;
+				/* フォームへの戻り値 */
+				/* 先を考えてエラー表示を関数にしておきます ローカル関数で十分*/
+				function Err(name) {
+					alert(name);
+					//エラーのお知らせ
+					return false;
+					//エラーがあれば 結果用変数をfalse
+				}
+
+			}
+		</script>
+	</head>
+	<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+		<!-- Navbar================================================== -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="brand" href="http://u-moa.info/">U-moa</a>
+					<ul class="nav">
+						<li>
+							<a href="https://www.facebook.com/Matsuyama.Satoshi?ref=tn_tnmn">全てを"もっと"面白く</a>
+						</li>
+					</ul>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="">
+								<a href="https://www.facebook.com/Umoa.fan"><i class="icon-thumbs-up icon-white"></i> Facebook</a>
+							</li>
+							<li class="">
+								<a href="http://youtu.be/8WZDFEJk1l8"><i class="icon-play-circle icon-white"></i> YouTube</a>
+							</li>
+							<li class="">
+								<a href="https://twitter.com/U_moa"><i class="icon-pencil icon-white"></i> Twitter</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<!-- font center -->
+			<div style="text-align:center">
+				<br />
+				<!-- discribe area================================================== -->
+				<div class="page-header">
+					<img src="images/top2.jpg" alt="with M">
+					<br/>
+					<br />
+					<h4><strong>あなたのもとに松山をハケン</strong></h4>
+					<br>
+					<p>
+						松山を呼ぶのは簡単。
+
+						<br />
+						あなたのTwitterIDをフォームに書くだけ。
+						<br />
+
+						<a href="https://twitter.com/Boss_yama">@Boss_yama</a> が彼につぶやいてくれます。
+
+						<br />
+						<br />
+					</p>
+					<!-- Form ================================================== -->
+					<form class="form-inline" action="block/bot.php" method="post" onsubmit="return ChkForm(this)" name="form1">
+						<div class="input-prepend">
+							<span class="add-on">@</span>
+							<div class="input-append">
+								<input class="span2" id="prependedInput" type="text" name="data1" placeholder="Username">
+								<button class="btn btn-primary" type="submit">
+									Send
+								</button>
+							</div>
+						</div>
+					</form><!-- twitter submit Form -->
+				</div><!-- discribe area -->
+
+				<div class="row-fluid">
+					<li class="span4">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4>松山とごはん食べたいとき</h4>
+								<p>
+									一人飯ほど寂しいものはないですよね。
+									<br>
+									そんなときには松山を呼び出しちゃえ！
+									<br>
+									ときどき奢っちゃうぞ！
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="span4">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4>松山に抱きつきたいとき</h4>
+								<p>
+									寒いときも暑いときも
+									<br>
+									人肌恋しくなるときは誰でもあるはず。
+									<br>
+									松山の逞しい腕のなかに飛び込んでおいで！
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="span4">
+						<div class="thumbnail">
+							<div class="caption">
+								<h4>松山とヤッホーしたいとき</h4>
+								<p>
+									金沢でまだヤッホーした事無い。
+									<br>
+									その欲望、松山にぶつけてみませんか？
+									<br>
+									一緒にヤッホーし、<a href="http://user.u-moa.info/max/public_html/shinano/">志な野アプリ</a>を使おう！
+								</p>
+							</div>
+						</div>
+					</li>
+				</div>
+
+				<br>
+
+				<!-- Footer ================================================== -->
+				<div class="footer">
+
+				</div><!-- footer setting -->
+			</div><!-- center -->
+		</div>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</html>
