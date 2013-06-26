@@ -1,0 +1,6 @@
+<?php
+
+define('CONSUMER_KEY', 'your_CONSUMER_KEY');
+define('CONSUMER_SECRET', 'your_CONSUMER_SECRET');
+define('ACCESS_TOKEN', 'your_ACCESS_TOKEN');
+define('ACCESS_TOKEN_SECRET', 'your_ACCESS_TOKEN_SECRET');
